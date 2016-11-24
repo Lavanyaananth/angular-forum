@@ -1,0 +1,32 @@
+<nav class="navbar navbar-default mainHeader">
+  <div class="container-fluid">
+    <!-- HAMBURGER MENU -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarCollapse" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a ui-sref="home" class="navbar-brand" >
+           <img src="../../content/images/logo.png" class="logo">
+      </a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+          <li><a ui-sref="home">Home</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Get App</span></a>
+          <ul class="dropdown-menu">
+            
+            <li><a href="https://itunes.apple.com/in/app/thrillophilia-book-activities/id1003794115?mt=8">IOS</a></li>
+            <li><a href="https://play.google.com/store/apps/details?id=com.thrillophilia&hl=en">Android</a></li>
+          </ul>
+        </li>
+        <li><a href="http://www.thrillophilia.com/blog/">Blog</a></li>
+        <li>  <button type="button" class="btn createTopic" ui-sref="newtopic">Create New Topic</button></li>
+      </ul>
+    </div>
+  </div>
+</nav>

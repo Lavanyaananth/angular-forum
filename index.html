@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html data-ng-app="app" ng-strict-di>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+    <title data-ng-bind="title"></title>
+    <base href="/">
+    <link rel="shortcut icon" type="image/png" href="content/images/favicon.ico" sizes="32x32">
+    <style>
+    /* This helps the ng-show/ng-hide animations start at the right place. */
+    /* Since Angular has this but needs to load, this gives us the class early. */
+    
+    .ng-hide {
+        display: none!important;
+    }
+    </style>
+    <!-- inject-vendor:css -->
+    <link href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="bower_components/angular-loading-bar/build/loading-bar.css" rel="stylesheet" />
+    <link href="/bower_components/toastr/toastr.css" rel="stylesheet" />
+    <link href="/bower_components/sweetalert/dist/sweetalert.css" rel="stylesheet" />
+    <!-- endinject -->
+
+    <!-- inject:css -->
+    <link href="/content/styles/css/styles.css" rel="stylesheet" />
+    <link href="/content/styles/css/style_change.css" rel="stylesheet" />
+    <!-- endinject -->
+
+    <!-- Font -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600italic,600,700,700italic,800,800italic' rel='stylesheet' type='text/css' />
+    <link href="/bower_components/jquery-ui/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+    <!-- End Font -->
+
+</head>
+
+<body>
+    <div id="preloader"></div>
+    <div>
+        <div data-ng-include="'app/layout/shell.html'"></div>
+    </div>
+
+    <!-- inject-vendor:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/jquery-ui/jquery-ui.js"></script>
+    <script src="/bower_components/angular/angular.js"></script>
+    <script src="/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="/bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="/bower_components/toastr/toastr.js"></script>
+    <script src="/bower_components/extras.angular.plus/ngplus-overlay.js"></script>
+    <script src="/bower_components/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="/bower_components/angular-loading-bar/build/loading-bar.min.js"></script>
+    <!-- endinject -->
+
+    <!-- inject:js -->
+    <!-- Bootstrapping -->
+    <script src="/app/app.module.js"></script>
+    <!-- Reusable Blocks/Modules -->
+    <script src="/app/blocks/exception/exception.module.js"></script>
+    <script src="/app/blocks/exception/exception-handler.provider.js"></script>
+    <script src="/app/blocks/exception/exception.js"></script>
+    <script src="/app/blocks/logger/logger.module.js"></script>
+    <script src="/app/blocks/logger/logger.js"></script>
+    <script src="/app/blocks/router/router.module.js"></script>
+    <script src="/app/blocks/router/routehelper.js"></script>
+    <!-- core module -->
+    <script src="/app/core/core.module.js"></script>
+    <script src="/app/core/constants.js"></script>
+    <script src="/app/core/config.js"></script>
+    <script src="/app/core/loader.js"></script>
+    <script src="/app/core/run.js"></script>
+    <script src="/app/core/authtoken.js"></script>
+    <script src="/app/core/transform.js"></script>
+    <script src="/app/core/transformRequest.js"></script>
+    <script src="/app/core/dataservice_run.js"></script>
+    <!-- layout -->
+    <script src="/app/layout/layout.module.js"></script>
+    <script src="/app/layout/shell.js"></script>
+    <script src="/app/layout/mainnav.directive.js"></script>
+    <!--widgets-->
+    <script src="/app/widgets/widgets.module.js"></script>
+    <script src="/app/widgets/ccSidebar.js"></script>
+    <script src="/app/widgets/ccSpinner.js"></script>
+    <script src="/app/widgets/ccWidgetClose.js"></script>
+    <script src="/app/widgets/ccWidgetHeader.js"></script>
+    <script src="/app/widgets/ccWidgetMinimize.js"></script>
+    <!--  Home -->
+    <script src="/app/home/home.module.js"></script>
+    <script src="/app/home/home.config.js"></script>
+    <script src="/app/home/home.controller.js"></script>
+    <!-- End Home -->
+    <!--  New Topic -->
+    <script src="/app/newtopic/newtopic.module.js"></script>
+    <script src="/app/newtopic/newtopic.config.js"></script>
+    <script src="/app/newtopic/newtopic.controller.js"></script>
+    <!-- End New Topic -->
+    <!-- Topic Details -->
+    <script src="/app/topic-details/topic-details.module.js"></script>
+    <script src="/app/topic-details/topic-details.config.js"></script>
+    <script src="/app/topic-details/topic-details.controller.js"></script>
+    <!-- Topic Details -->
+</body>
+
+</html>

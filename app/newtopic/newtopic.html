@@ -1,0 +1,35 @@
+<mainnav></mainnav>
+<div class="container">
+  <div class="row newTopicWrapper">
+    <div class="col-md-1"> </div>
+    <div class="col-md-6">
+        <h4>Create a new topic</h4>
+        <form ng-init="vm.formdata" class="createTopicForm" ng-submit="vm.postTopic()">
+            <div class="form-group">
+                <input class="form-control" placeholder="Title" ng-model="vm.formdata.title" ng-required="true" type="text">
+            </div>
+            <div class="form-group">
+                <textarea class="form-control" placeholder="Short Description" ng-model="vm.formdata.desc" rows="2" id="comment" ng-required="true"></textarea>
+            </div>
+            <div class="form-group">
+                <textarea class="form-control" placeholder="Message" ng-model="vm.formdata.message" rows="8" id="comment" ng-required="true"></textarea>
+            </div>
+            <button type="submit" class="btn postTopic">Create Topic</button>
+            <button type="button" class="btn cancelAction" ui-sref="home">Cancel</button>
+        </form>
+    </div>
+    <div class="col-md-4">
+        <div class="panel panel-default sectionTwo">
+            <h4>Highlighted Topics</h4>
+            <div class="userInfo" ng-repeat="item in vm.highlights">
+                <a ui-sref="topic-details">{{item.title}}</a>
+                <h5>{{item.desc}}</h5>
+                <p><span>Posted by ,</span> {{item.postedby}}</p>
+                <p>{{item.date}}</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-1"> </div>
+</div>
+  
+</div>

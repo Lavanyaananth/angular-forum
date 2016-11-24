@@ -1,0 +1,26 @@
+<mainnav></mainnav>
+<div class="container">
+  <div class="row topicsListWrapper">
+    <div class="col-md-8 sectionOne">
+        <h4>What's New</h4>
+        <div class="forumInfo" ng-repeat="item in vm.foruminfo">
+            <a ui-sref="topic-details">{{item.title}}</a>
+            <h5>{{item.desc}}</h5>
+            <p><span>Posted by ,</span> {{item.postedby}}</p>
+            <p>{{item.date}}</p>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="panel panel-default sectionTwo">
+            <h4>Popular Topics</h4>
+            <div class="topicInfo" ng-repeat="item in vm.topicinfo">
+                <a ui-sref="topic-details">{{item.title}} </a>
+                <h5>{{item.desc}}</h5>
+                <p><span>Posted by ,</span> {{item.postedby}}</p>
+                <p>{{item.date}}</p>
+            </div>
+        </div>
+    </div>
+</div>  
+</div>
+

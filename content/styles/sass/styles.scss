@@ -1,0 +1,17 @@
+
+$font-stack: 'open sans';
+$primary-color: #00bcd4;
+$secondary-color:#fabf01;
+$white-color: #fff;
+$black-color: #000;
+$bg-form:#f4f5f5;
+$text-color:#757575;
+body {
+  font: 100%;
+  background-color: $white-color;
+  color:#000;
+  font-family: $font-stack;
+ }
+
+
+@import '_mainsheet';

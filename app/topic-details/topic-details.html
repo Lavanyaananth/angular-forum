@@ -1,0 +1,66 @@
+<mainnav></mainnav>
+<div class=" container detailWrapper">
+    <ol class="breadcrumb subnav">
+        <li><a ui-sref="home">Home</a></li>
+        <li><a ui-sref="newtopic">Create Topic</a></li>
+        <li class="active"><a style="color:#f16f30">Topic details</a></li>
+    </ol>
+    <div class="container">
+        <div class="row infoWrapper">
+            <div class="col-md-12 sectionOne">
+                <h4>Uganda Visa Fees</h4>
+                <div class="media">
+                    <div class="media-left imageColumn">
+                        <a href="#">
+                            <img class="media-object" src="https://randomuser.me/api/portraits/men/83.jpg" alt="...">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h5 class="media-heading">Kedhar shasthri</h5>
+                        <p>Posted on, 20th September 2016</p>
+                    </div>
+                </div>
+                <p class="fullContent">With effect from July 22nd 2016, tourists seeking to come to Uganda will pay half of the money they have been paying for single entry tourist visas. Government has halved the fees from $100 to $50 in an effort to encourage more tourists to come to the country that has been consistently ranked among top tour destinations in the world for the past few years.
+                    <br> The CNN travel magazine last year ranked Uganda among the 16 top tourist destinations in the world. In 2012, Lonely Planet, another global travel magazine, ranked Uganda as a number one tourist destination. Bloom Consulting, a global form specializing in country branding and ranking, placed Uganda in the eighth position among the top ten tourist destinations in 2014.
+                </p>
+                <span class="heartIt"><img src="../../content/images/heart.svg" class="imgAttr"> 20</span>
+                <span class="commentSection"><img src="../../content/images/comment.svg" class="imgAttr">4 Comments</span>
+            </div>
+        </div>
+        <div class="container addComment ">
+            <div class="row">
+                <div class="col-md-6">
+                    <form ng-init="vm.formdata" ng-submit="vm.postComment()">
+                        <div class="form-group">
+                            <textarea class="form-control" placeholder="Add your comment" ng-model="vm.formdata.desc" rows="2" id="shortComment" ng-required="true">
+                            </textarea>
+                        </div>
+                        <button type="submit" class="btn publishBtn">Publish</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="container commentWrapper">
+            <div class="row">
+                <div class="col-md-6">
+                 <p class="totalCount"> 4 Comments </p>
+                    <div class="listOfComments" ng-repeat="item in vm.usercomments">
+
+                        <div class="media">
+                            <div class="media-left imageColumn">
+                                <a href="#">
+                                    <img class="media-object" src="{{item.imageurl}}" alt="...">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h5 class="media-heading">{{item.postedby}}</h5>
+                                <p>{{item.date}}</p>
+                            </div>
+                            <p class="fullContent">{{item.content}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
