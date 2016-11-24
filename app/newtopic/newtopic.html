@@ -24,8 +24,8 @@
             <div class="userInfo" ng-repeat="item in vm.highlights">
                 <a ui-sref="topic-details">{{item.title}}</a>
                 <h5>{{item.desc}}</h5>
-                <p><span>Posted by ,</span> {{item.postedby}}</p>
-                <p>{{item.date}}</p>
+                <p><span>Posted by - </span> <span class="author">{{item.postedby}}</span> , {{item.date}}</p>
+                <p></p>
             </div>
         </div>
     </div>

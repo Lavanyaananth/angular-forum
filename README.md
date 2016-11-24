@@ -14,6 +14,17 @@ Application Structure
 
 Make sure you have Node.js installed
 
+Installing node
+
+```
+# on OSX use homebrew
+brew install node
+# on Windows use chocolatey
+choco install nodejs
+
+
+Running on localhost
+
 ```
 $ npm install
 $ gulp run-local

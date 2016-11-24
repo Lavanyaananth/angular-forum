@@ -5,15 +5,19 @@ body {
   font-family: "open sans"; }
 
 /* Header */
-.mainHeader {
+.navbar {
   background-color: #fff;
-  height: 70px; }
+  padding-bottom: 10px;
+  padding-top: 10px; }
 
-.navbar-right {
+.navbar .navbar-default .navbar-right {
   padding: 10px 20px; }
-  .navbar-right li a {
-    color: #f16f30 !important;
+  .navbar .navbar-default .navbar-right li a {
+    color: #f16f30;
     margin: 0px 10px; }
+
+.navbar-brand {
+  padding-top: 0; }
 
 .logo {
   width: 200px; }
@@ -25,10 +29,26 @@ body {
   padding: 10px 10px;
   font-size: 12px;
   color: #f16f30;
-  margin: 6px 30px; }
+  margin: 6px 30px;
+  -webkit-transition-property: background, border, color;
+  -moz-transition-property: background, border, color;
+  -o-transition-property: background, border, color;
+  transition-property: background, border, color;
+  -webkit-transition-duration: 0.25s;
+  -moz-transition-duration: 0.25s;
+  -o-transition-duration: 0.25s;
+  transition-duration: 0.25s; }
   .createTopic:hover {
     background-color: #f16f30;
-    color: #fff; }
+    color: #fff;
+    -webkit-transition-property: background, border, color;
+    -moz-transition-property: background, border, color;
+    -o-transition-property: background, border, color;
+    transition-property: background, border, color;
+    -webkit-transition-duration: 0.25s;
+    -moz-transition-duration: 0.25s;
+    -o-transition-duration: 0.25s;
+    transition-duration: 0.25s; }
 
 /* form-styles */
 .form-group input:placeholder-shown {
@@ -57,20 +77,42 @@ body {
 /* Post topic page*/
 .postTopic {
   border-color: #f16f30;
-  background-color: #f16f30;
+  background-color: #fff;
   padding: 10px 25px;
   font-size: 14px;
   margin-top: 20px;
-  color: #fff; }
+  color: #f16f30;
+  -webkit-transition-property: background, border, color;
+  -moz-transition-property: background, border, color;
+  -o-transition-property: background, border, color;
+  transition-property: background, border, color;
+  -webkit-transition-duration: 0.25s;
+  -moz-transition-duration: 0.25s;
+  -o-transition-duration: 0.25s;
+  transition-duration: 0.25s; }
   .postTopic:hover {
     background-color: #f16f30;
-    color: #000; }
+    color: #fff;
+    -webkit-transition-property: background, border, color;
+    -moz-transition-property: background, border, color;
+    -o-transition-property: background, border, color;
+    transition-property: background, border, color;
+    -webkit-transition-duration: 0.25s;
+    -moz-transition-duration: 0.25s;
+    -o-transition-duration: 0.25s;
+    transition-duration: 0.25s; }
 
 .cancelAction {
   border: none;
   background-color: #fff;
   padding-top: 20px;
   padding-left: 30px; }
+  .cancelAction:focus {
+    outline: none; }
+
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
+  outline: none;
+  box-shadow: none; }
 
 .newTopicWrapper .sectionTwo {
   padding: 20px 20px;
@@ -89,7 +131,7 @@ body {
     font-size: 14px;
     font-weight: 100;
     color: #757575;
-    line-height: normal; }
+    line-height: 20px; }
   .newTopicWrapper .sectionTwo span {
     color: #757575;
     font-size: 12px;
@@ -98,6 +140,11 @@ body {
     color: #757575;
     font-size: 12px;
     font-weight: 400;
+    text-transform: capitalize; }
+  .newTopicWrapper .sectionTwo .author {
+    color: #757575;
+    font-size: 12px;
+    font-weight: 600;
     text-transform: capitalize; }
   .newTopicWrapper .sectionTwo .topicInfo {
     margin-bottom: 20px; }
@@ -126,6 +173,12 @@ body {
   font-weight: 400;
   text-transform: capitalize; }
 
+.topicsListWrapper .sectionOne .author {
+  color: #757575;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: capitalize; }
+
 .topicsListWrapper .sectionOne .forumInfo {
   margin-bottom: 20px; }
 
@@ -144,7 +197,7 @@ body {
     font-size: 14px;
     font-weight: 100;
     color: #757575;
-    line-height: normal; }
+    line-height: 20px; }
   .topicsListWrapper .sectionTwo span {
     color: #757575;
     font-size: 12px;
@@ -153,6 +206,11 @@ body {
     color: #757575;
     font-size: 12px;
     font-weight: 400;
+    text-transform: capitalize; }
+  .topicsListWrapper .sectionTwo .author {
+    color: #757575;
+    font-size: 12px;
+    font-weight: 600;
     text-transform: capitalize; }
   .topicsListWrapper .sectionTwo .topicInfo {
     margin-bottom: 20px; }
@@ -224,10 +282,26 @@ body {
     padding: 10px 30px;
     font-size: 12px;
     color: #f16f30;
-    float: right; }
+    float: right;
+    -webkit-transition-property: background, border, color;
+    -moz-transition-property: background, border, color;
+    -o-transition-property: background, border, color;
+    transition-property: background, border, color;
+    -webkit-transition-duration: 0.25s;
+    -moz-transition-duration: 0.25s;
+    -o-transition-duration: 0.25s;
+    transition-duration: 0.25s; }
     .detailWrapper .addComment .publishBtn:hover {
       background-color: #f16f30;
-      color: #fff; }
+      color: #fff;
+      -webkit-transition-property: background, border, color;
+      -moz-transition-property: background, border, color;
+      -o-transition-property: background, border, color;
+      transition-property: background, border, color;
+      -webkit-transition-duration: 0.25s;
+      -moz-transition-duration: 0.25s;
+      -o-transition-duration: 0.25s;
+      transition-duration: 0.25s; }
 
 .detailWrapper .commentWrapper {
   padding-left: 0px; }

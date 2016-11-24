@@ -6,8 +6,7 @@
         <div class="forumInfo" ng-repeat="item in vm.foruminfo">
             <a ui-sref="topic-details">{{item.title}}</a>
             <h5>{{item.desc}}</h5>
-            <p><span>Posted by ,</span> {{item.postedby}}</p>
-            <p>{{item.date}}</p>
+            <p><span>Posted by - </span> <span class="author"> {{item.postedby}}</span> ,{{item.date}} </p>
         </div>
     </div>
     <div class="col-md-4">
@@ -16,8 +15,8 @@
             <div class="topicInfo" ng-repeat="item in vm.topicinfo">
                 <a ui-sref="topic-details">{{item.title}} </a>
                 <h5>{{item.desc}}</h5>
-                <p><span>Posted by ,</span> {{item.postedby}}</p>
-                <p>{{item.date}}</p>
+                <p><span>Posted by - </span> <span class="author"> {{item.postedby}}</span> , {{item.date}}</p>
+                <p></p>
             </div>
         </div>
     </div>
