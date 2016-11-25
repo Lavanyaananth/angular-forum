@@ -22,6 +22,7 @@ brew install node
 # on Windows use chocolatey
 choco install nodejs
 
+```
 
 Running on localhost
 
